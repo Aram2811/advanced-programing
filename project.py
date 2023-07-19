@@ -146,7 +146,7 @@ class OrderHistory:
     def remove_order(self, order):
         self.orders.remove(order)
 
-    def view_orders(self, order):
+    def view_orders(self):
         for order in self.orders:
             print("Customer:", order.customer.name)
             print("Customer Address:", order.customer.address)
