@@ -101,7 +101,7 @@ class Customer:
 class Order:
     def __init__(self, customer, items, discount=""):
         self._customer = customer
-        self._restaurant_name = None
+        self._restaurant_name = restaurant 
         self._items = items
         self._total_price = self.calculate_total_price(discount)
         self._customer_discount = discount
